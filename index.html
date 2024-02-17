@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Web Player: Music for everyone | By Aayush Tyagi</title>
+    <link rel="icon" href="assests/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+</head>
+
+<body class="bg-black">
+    <div class="container flex">
+
+        <!-- LEFT CONTAINER -->
+        <div class="leftContainer ">
+            <img class="close" src="assests/left-container/close.svg" alt="">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="assests/left-container/logo.svg" alt="logo-spotify"></div>
+                <ul>
+                    <li><img class="invert img-width" src="assests/left-container/home.svg" alt="home" />Home</li>
+                    <li><img class="invert img-width" src="assests/left-container/search.svg" alt="search" />Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="headingLibrary flex">
+                    <img class="invert img-width" src="assests/left-container/library.svg" alt="logo-playlist">
+                    <h3> Your Library</h3>
+                </div>
+                <div class="songList">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer flex">
+                    <div><a href="/"><span>Legal</span></a></div>
+                    <div><a href="/"><span>Privacy Center</span></a></div>
+                    <div><a href="/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="/"><span>Cookies</span></a></div>
+                    <div><a href="/"><span>About Ads</span></a></div>
+                    <div><a href="/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT CONTAINER -->
+        <div class="rightContainer bg-grey rounded ">
+            <div class="headerRight">
+                <div class="nav">
+                    <div class="hamBurgerCont">
+                        <img class="hamBurger" src="assests/right-container/hamburger.svg" alt="">
+                        <button class="leftArrow"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 7L10 12L15 17" stroke="grey" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                        <button class="rightArrow"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 7L15 12L10 17" stroke="grey" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signUp">Sign up</button>
+                    <button class="logIn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <h2>Spotify Playlists</h2>
+                <div class="cardContainer">
+
+                </div>
+            </div>
+
+            <div class="playBar">
+                <div class="oneLine">
+                    <div class="songInfo invert"></div>
+                    <div class="songButtons">
+                        <img id="previous" src="assests/right-container/previous.svg" alt="">
+                        <img id="play" src="assests/right-container/play.png" alt="">
+                        <img id="next" src="assests/right-container/next.svg" alt="">
+                    </div>
+                    <div class="timeVolume">
+                        <div class="songTime invert"></div>
+                        <div class="volumeButton">
+                            <img src="assests/right-container/volume.svg" alt="">
+                            <input type="range" name="volumeButton" id="volumeRange">
+                        </div>
+                    </div>
+                </div>
+                <div class="seekBar">
+                    <div class="circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+.align_center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #121212;
+    color: white;
+}
+
+.rounded{
+    border-radius: 8px;
+}
+
+.img-width{
+    width: 18px;
+}
+
+.m-1{
+    margin: 0.5rem;
+}
+
+.p-1{
+    padding: 1rem;
+}
